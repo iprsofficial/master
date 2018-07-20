@@ -1,0 +1,9 @@
+{
+  "name": "iprshome",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "less": "^3.7.1"
+  }
+}
