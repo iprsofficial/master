@@ -1,0 +1,242 @@
+@import './flex.less';
+
+@font-face {
+    font-family: 'pingfang';
+    src: url('../font/pf.ttf');
+}
+.image,.bg {
+    pointer-events: none;
+    user-select: none;
+}
+body {
+    background-color: #ffffff;
+    padding-block-end: 0;
+    margin: 0;
+    font-family: 'pingfang';
+    color: #333;
+}
+section {
+    position: relative;
+}
+section.bg-color-white1 {
+    background-color: #ffffff; 
+}
+section.bg-color-white2 {
+    background-color: #f8f8f8; 
+}
+section.bg-color-black {
+    background-color: #0a0a0a;
+    color: #ffffff;
+}
+section.bg-color-black2 {
+    background-color: #343a48;
+    color: #fff;
+}
+header {
+    margin-top: 35px;
+}
+img.bg {
+    display: block;
+    width: 100%;
+    pointer-events: none;
+    margin: 0;
+    padding: 0;
+}
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.text-center {
+    text-align: center;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+nav {
+    a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+    }
+}
+
+.m-l-10 {
+    margin-left: 10px;
+}
+.m-r-10 {
+    margin-right: 10px;
+}
+
+.title {
+    font-size: 28px;
+    line-height: 42px;
+    margin: 10px 0 30px 0;
+}
+  
+.text-content {
+    padding: 50px;
+}
+
+#jiazhi {
+    .list {
+        .item {
+            position: relative;
+            padding: 30px 0;
+            align-items: center;
+            .icon {
+                margin-right: 50px;
+            }
+            .title {
+                font-size: 18px;
+                margin: 5px 0;
+                line-height: 1em;
+                
+            }
+            p {
+                margin: 0;
+            }
+            &:after {
+                content: ' ';
+                height: 1px;
+                background-color: rgba(255,255,255,0.32);
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                transform: scaleY(0.5);
+            }
+            &:last-child {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+    
+}
+
+#youshi {
+    .list {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 70px;
+        .item {
+            position: relative;
+            padding: 30px 0;
+            align-items: center;
+            width: 216px;
+            text-align: center;
+            .image {
+                height: 120px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .icon {
+                margin-right: 50px;
+            }
+            .title {
+                font-size: 18px;
+                margin: 5px 0;
+                line-height: 1em;
+                font-weight: 800px;
+                margin-bottom: 26px;
+                margin-top: 46px;
+            }
+            p {
+                margin: 0;
+                font-size: 16px;
+            }
+            &:after {
+                content: ' ';
+                height: 1px;
+                background-color: rgba(255,255,255,0.32);
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                transform: scaleY(0.5);
+            }
+            &:last-child {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+    
+}
+#yuanli {
+    .image {
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+    hr {
+        border-color: #d7d7d7;
+    }
+}
+#baipishu {
+    .content {
+        margin-left: 80px;
+        width: 519px;
+        a {
+            margin-top: 90px;
+            display: block;
+        }
+    }
+}
+#hexin {
+    color: #fff;
+    // .text-content {
+    //     padding-left: 100px;
+    // }
+    
+    .face-box {
+        display: flex;
+        img {
+            border-radius: 50px;
+            display: block;
+            margin: 0;
+            padding: 0;
+            border-color: rgba(255,255,255,0.3);
+            border-style: solid;
+            border-width: 5px;            
+        }
+        .info {
+            padding: 15px;
+            .name {
+                font-size: 18px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+        &.small {
+            width: 310px;
+            img{
+                border-radius: 40px;
+            }
+        }
+    }
+    .row {
+        margin-bottom: 70px;
+    }
+}
+
+#women {
+    .title {
+        margin-bottom: 0;
+    }
+    .image {
+        margin-top: 80px;
+    }
+}
+#footer {
+    padding: 10px 0;
+}

@@ -4,6 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "less": "^3.7.1"
+    "less": "^3.7.1",
+    "parcel": "*"
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "clear": "rm -rf ./dist",
+    "build": "parcel build index.html"
   }
 }
