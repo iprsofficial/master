@@ -20,7 +20,3 @@ npm start
 rm -rf ./dist
 npm run build
 ```
-
-## 生产环境优化
-1. 配置强制缓存
-1. 配置cdn
