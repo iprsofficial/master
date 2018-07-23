@@ -1,5 +1,4 @@
 @import './flex.less';
-
 @font-face {
     font-family: 'pingfang';
     src: url('../font/pf.ttf');
@@ -86,6 +85,24 @@ nav {
 .text-content {
     padding: 50px;
 }
+
+#women {
+    .list {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+        .item {
+            display: flex;
+            align-items: center;
+            .title {
+                display: block;
+                font-size: 14px;
+                margin: 15px;
+            }
+        }
+    }
+}
+  
 
 #jiazhi {
     .list {
@@ -241,6 +258,36 @@ nav {
         margin-top: 80px;
     }
 }
+#guwen {
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        
+        .item {
+            margin-bottom: 60px;
+            margin-top: 20px;
+            display: flex;
+            width: 25%;
+            img {
+                border-radius: 50%;
+                width: 90px;
+                height: 90px;
+            }
+            .info {
+                padding: 8px;
+                .name {
+                    font-size: 18px;
+                    font-weight: 800;
+                }
+                p {
+                    font-size: 14px;
+                    color: #666;
+                    margin: 10px 0;
+                }                
+            }
+        }
+    }
+}
 #footer {
     padding: 10px 0;
     .list {
@@ -257,3 +304,5 @@ nav {
         }
     }
 }
+
+@import './mobile.less';
