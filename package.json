@@ -10,6 +10,7 @@
   "scripts": {
     "start": "parcel index.html",
     "clear": "rm -rf ./dist",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "deploy": "scp -r ./dist root@dp199313.cn:/mnt/www/static/iprshome"
   }
 }
