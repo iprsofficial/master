@@ -1,5 +1,5 @@
 {
-  "name": "iprshome",
+  "name": "YottaChainhome",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -11,6 +11,6 @@
     "start": "parcel index.html",
     "clear": "rm -rf ./dist",
     "build": "parcel build index.html",
-    "deploy": "scp -r ./dist root@dp199313.cn:/mnt/www/static/iprshome"
+    "deploy": "scp -r ./dist root@dp199313.cn:/mnt/www/static/YottaChainhome"
   }
 }
